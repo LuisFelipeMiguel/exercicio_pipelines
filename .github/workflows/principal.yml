@@ -59,12 +59,5 @@ jobs:
       repo-token: "hello"
     secrets:
       SSH_SECRET_KEY: ${{ secrets.SSH_SECRET_KEY }}
-  teste-sqlserver-sql:
-    if: ${{ github.event.inputs.nuvem == 'SqlServer' }} 
-    uses: ./.github/workflows/sqlserver.yml
-    with:
-      config-path: "SqlServer"
-      repo-token: "hello"
-    secrets:
-      SSH_SECRET_KEY: ${{ secrets.SSH_SECRET_KEY }}
+
 
